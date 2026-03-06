@@ -170,3 +170,162 @@ font-size:20px;
 color:#fff;
 text-decoration:none;
 }
+@media (min-width:768px){
+
+.container{
+max-width:900px;
+margin:auto;
+padding:28px;
+}
+
+/* HEADER */
+
+.bienvenida h2{
+font-size:32px;
+}
+
+.bienvenida p{
+font-size:15px;
+}
+
+.perfil{
+width:56px;
+height:56px;
+}
+
+/* BUSQUEDA */
+
+.buscar{
+display:flex;
+gap:16px;
+width:100%;
+}
+
+.buscar input{
+flex:1;
+height:60px;
+font-size:18px;
+padding:0 20px;
+border-radius:18px;
+}
+
+.filtrar{
+width:64px;
+height:60px;
+border-radius:14px;
+}
+
+/* CATEGORIAS */
+
+.categorias{
+gap:12px;
+flex-wrap:wrap;
+}
+
+.categorias button{
+min-height:46px;
+padding:0 16px;
+font-size:15px;
+}
+
+/* PRODUCTOS */
+
+.products{
+grid-template-columns:repeat(2,1fr);
+gap:24px 20px;
+}
+
+.card h4{
+font-size:22px;
+}
+
+.type{
+font-size:14px;
+}
+
+.price,
+.rating{
+font-size:18px;
+}
+
+}
+
+
+
+/* ========================= */
+/* COMPUTADOR */
+/* ========================= */
+
+@media (min-width:1024px){
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:32px;
+}
+
+/* HEADER */
+
+.bienvenida h2{
+font-size:36px;
+}
+
+.bienvenida p{
+font-size:16px;
+}
+
+/* BUSQUEDA EXPANDIDA */
+
+.buscar{
+width:100%;
+max-width:1100px;   /* hace que la barra se expanda */
+margin-top:10px;
+}
+
+.buscar input{
+flex:1;
+height:70px;       /* más grande como antes */
+font-size:20px;
+padding:0 24px;
+border-radius:22px;
+}
+
+.filtrar{
+width:70px;
+height:70px;
+}
+
+/* CATEGORIAS */
+
+.categorias button{
+min-height:48px;
+padding:0 18px;
+}
+
+/* PRODUCTOS */
+
+.products{
+grid-template-columns:repeat(4,1fr);
+gap:24px;
+}
+
+.card h4{
+font-size:20px;
+}
+
+.type{
+font-size:13px;
+}
+
+.price,
+.rating{
+font-size:16px;
+}
+
+/* OCULTAR MENU INFERIOR EN PC */
+
+.iconos{
+display:none;
+}
+
+}

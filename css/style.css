@@ -56,15 +56,12 @@ font-size:14px;
 .filtrar{
 width:40px;
 height:40px;
-
 border:none;
 border-radius:8px;
-
-background:#222;
+background-color: #fff;
 display:flex;
 align-items:center;
 justify-content:center;
-
 cursor:pointer;
 }
 
@@ -119,6 +116,33 @@ grid-template-columns:repeat(2,1fr);
 gap:20px;
 }
 
+
+/* TARJETA DEL PRODUCTO */
+.card {
+  position: relative;
+}
+
+/* BOTON CORAZON */
+.corazon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* IMAGEN DEL CORAZON */
+.corazon img {
+  width: 16px;
+  height: 16px;
+}
 .card img{
 width:100%;
 height:auto;       

@@ -1,0 +1,320 @@
+/* =================================
+   1. RESET
+================================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =================================
+   2. BASE
+================================= */
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* =================================
+   3. PRODUCT CONTAINER
+================================= */
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.product-image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.back-btn,
+.heart-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.back-btn {
+  left: 20px;
+}
+
+.heart-btn {
+  right: 20px;
+}
+
+/* Icon sizes */
+
+.back-btn img {
+  width: 12px;
+  height: 12px;
+}
+
+.heart-btn img {
+  width: 100%;
+  height: 100%;
+}
+
+/* =================================
+   6. PRODUCT INFO
+================================= */
+
+.product-info {
+  padding: 20px 20px 100px;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.product-info h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* =================================
+   7. QUANTITY
+================================= */
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+.quantity span {
+  font-weight: 600;
+}
+
+/* =================================
+   8. RATING
+================================= */
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.star {
+  color: #f5a623;
+}
+
+.reviews {
+  font-size: 13px;
+  color: #f5a623;
+}
+
+/* =================================
+   9. DESCRIPTION
+================================= */
+
+.description {
+  font-size: 13.5px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* =================================
+   10. OPTIONS
+================================= */
+
+.options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.options h4 {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* Sizes */
+
+.size-list {
+  display: flex;
+  gap: 8px;
+}
+
+.size-list button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+.size-list .active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* Colors */
+
+.color-list {
+  display: flex;
+  gap: 10px;
+}
+
+.color-list span {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+}
+
+.gray-light {
+  background: #b0b0b0;
+}
+
+.gray-dark {
+  background: #6b6b6b;
+}
+
+.black {
+  background: #111;
+}
+
+/* =================================
+   11. ADD TO CART
+================================= */
+
+.add-cart {
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  right: 16px;
+
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 18px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  cursor: pointer;
+}
+
+.cart-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.old-price {
+  color: #888;
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+/* =================================
+   12. RESPONSIVE - TABLET
+================================= */
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .product-image {
+    height: 320px;
+  }
+
+}
+
+/* =================================
+   13. RESPONSIVE - DESKTOP
+================================= */
+
+@media (min-width: 1024px) {
+
+  body {
+    padding: 60px;
+  }
+
+  .product {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+  }
+
+  .product-image {
+    height: 100%;
+  }
+
+  .product-image img {
+    height: 100%;
+  }
+
+  .product-info {
+    padding: 50px;
+  }
+
+  .product-info h1 {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .add-cart {
+    position: static;
+    margin-top: 40px;
+  }
+
+}

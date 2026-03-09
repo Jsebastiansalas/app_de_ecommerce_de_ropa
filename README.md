@@ -1,4 +1,4 @@
-# Fashion App - E-commerce de Ropa 🛍️🧥
+# App Ecommerce de Ropa 🛍️🧥
 
 Bienvenido al repositorio de **Fashion App**, una aplicación de comercio electrónico diseñada para explorar, ver detalles y comprar prendas de vestir modernas y a la moda. Esta interfaz de usuario (UI) proporciona una experiencia de compra fluida y visualmente atractiva, ideal para dispositivos móviles.
 
@@ -28,9 +28,8 @@ Este proyecto es estrictamente de frontend y no requiere lenguajes de servidor o
 
 *   **HTML5:** Estructura semántica del contenido.
 *   **CSS3:** Estilos completos, uso de `variables.css` para colores/fuentes estandarizados y diseño moderno.
-*   *(Sin dependencias externas ni frameworks de JavaScript)*
 
----
+
 
 ## 📂 Estructura del Proyecto
 

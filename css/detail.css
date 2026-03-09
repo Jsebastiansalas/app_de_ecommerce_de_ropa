@@ -1,7 +1,3 @@
-/* =================================
-   1. RESET
-================================= */
-
 *,
 *::before,
 *::after {
@@ -9,10 +5,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* =================================
-   2. BASE
-================================= */
 
 body {
   font-family: "DM Sans", sans-serif;
@@ -22,10 +14,6 @@ body {
   align-items: center;
   min-height: 100vh;
 }
-
-/* =================================
-   3. PRODUCT CONTAINER
-================================= */
 
 .product {
   display: grid;
@@ -44,7 +32,6 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
 
 .back-btn,
 .heart-btn {
@@ -71,8 +58,6 @@ body {
   right: 20px;
 }
 
-/* Icon sizes */
-
 .back-btn img {
   width: 12px;
   height: 12px;
@@ -82,10 +67,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
-/* =================================
-   6. PRODUCT INFO
-================================= */
 
 .product-info {
   padding: 20px 20px 100px;
@@ -103,10 +84,6 @@ body {
   font-weight: 700;
   color: #111;
 }
-
-/* =================================
-   7. QUANTITY
-================================= */
 
 .quantity {
   display: flex;
@@ -127,10 +104,6 @@ body {
   font-weight: 600;
 }
 
-/* =================================
-   8. RATING
-================================= */
-
 .rating {
   display: flex;
   align-items: center;
@@ -147,20 +120,12 @@ body {
   color: #f5a623;
 }
 
-/* =================================
-   9. DESCRIPTION
-================================= */
-
 .description {
   font-size: 13.5px;
   color: #555;
   line-height: 1.6;
   margin-bottom: 20px;
 }
-
-/* =================================
-   10. OPTIONS
-================================= */
 
 .options {
   display: flex;
@@ -171,8 +136,6 @@ body {
   font-size: 13px;
   margin-bottom: 10px;
 }
-
-/* Sizes */
 
 .size-list {
   display: flex;
@@ -193,8 +156,6 @@ body {
   color: #fff;
   border-color: #111;
 }
-
-/* Colors */
 
 .color-list {
   display: flex;
@@ -220,10 +181,6 @@ body {
 .black {
   background: #111;
 }
-
-/* =================================
-   11. ADD TO CART
-================================= */
 
 .add-cart {
   position: absolute;
@@ -254,10 +211,6 @@ body {
   font-size: 13px;
   text-decoration: line-through;
 }
-
-/* =================================
-   12. RESPONSIVE - TABLET
-================================= */
 
 @media (max-width: 768px) {
 

@@ -43,7 +43,7 @@ button{
 img {
   display: flex;
   justify-content: column-reverse;
-  border-radius: 50px;
+  border-radius: 45px;
   width: 20rem;
   height: 20rem;
 }
